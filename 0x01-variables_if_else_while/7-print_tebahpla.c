@@ -5,7 +5,8 @@
 *putchar - to print
 *Return: Always 0 (Success)
 *Using betty style
-*/int main(void)
+*/
+int main(void)
 {
 char x;
 for (x = 'z'; x >= 'a'; x--)
