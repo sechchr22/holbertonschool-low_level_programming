@@ -4,6 +4,7 @@
 *for - makes the loop till the condition become false
 *while - is making a loop inside the first one
 *putchar - to print
+*x: char variable that will hold our letter
 *Return: Always 0 (Success)
 *Using betty style
 */
