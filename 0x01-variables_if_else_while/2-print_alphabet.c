@@ -11,13 +11,11 @@
 */
 int main(void)
 {
-int x;
-for (x = 'A'; x <= 'Z'; x++)
+char x;
+for (x = 'a'; x <= 'z'; x++)
 {
-int lower = tolower(x);
-putchar (lower);
+putchar (x);
 }
 putchar ('\n');
 return (0);
 }
-
