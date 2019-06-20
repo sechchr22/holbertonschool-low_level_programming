@@ -11,16 +11,13 @@
 int main(void)
 {
 int x;
-for (x = '0'; x <= '9'; x++)
-{
-if (x == '9')
+for (x = 48; x <= 57; x++)
 {
 putchar (x);
-}
-else
+if (x >= 48 && x < 57)
 {
-putchar (x);
 putchar (',');
+putchar (' ');
 }
 }
 putchar ('\n');
