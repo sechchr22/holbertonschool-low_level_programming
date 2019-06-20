@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 /**
 *main - Entry point
 *for - makes the loop till the condition become false
