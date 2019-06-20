@@ -11,7 +11,7 @@
 */
 int main(void)
 {
-char x;
+int x;
 for (x = 'A'; x <= 'Z'; x++)
 {
 int lower = tolower(x);
