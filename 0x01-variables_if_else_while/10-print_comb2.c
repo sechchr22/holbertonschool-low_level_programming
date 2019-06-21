@@ -18,7 +18,7 @@ for (x = 48; x <= 57; x++)
 {
 putchar (j);
 putchar (x);
-if (x >= 48 && x <= 57)
+if (!(x == 57 && j == 57))
 {
 putchar (',');
 putchar (' ');
