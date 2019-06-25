@@ -13,12 +13,13 @@ if (m < 0)
 {
 x = m*(-1);
 _putchar(x + '0');
+return (x);
 }
-else if (m == 0 || m > 0)
+else
 {
 _putchar(m + '0');
+return (m);
 }
-return (0);
 }
 
 
