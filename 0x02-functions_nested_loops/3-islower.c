@@ -1,4 +1,3 @@
-#include "holberton.h"
 /**
 * _islower - Function to check  if i have a lowercase character
 * @c: character to check
