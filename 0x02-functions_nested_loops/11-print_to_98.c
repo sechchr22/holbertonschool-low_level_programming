@@ -13,10 +13,10 @@ for (x = n; x >= 98; x--)
 {
 if (x == 98)
 {
-printf("%d",x);
+printf("%d", x);
 break;
 }
-printf("%d, ",x);
+printf("%d, ", x);
 }
 printf("\n");
 }
@@ -26,16 +26,16 @@ for (x = n; x <= 98; x++)
 {
 if (x == 98)
 {
-printf("%d",x);
+printf("%d", x);
 break;
 }
-printf("%d, ",x);
+printf("%d, ", x);
 }
 printf("\n");
 }
 else
 {
-printf("%d",n);
+printf("%d", n);
 printf("\n");
 }
 }
