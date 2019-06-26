@@ -11,11 +11,12 @@ if (n > 98)
 {
 for (x = n; x >= 98; x--)
 {
-printf("%d,  ",x);
 if (x == 98)
 {
 printf("%d",x);
+break;
 }
+printf("%d, ",x);
 }
 printf("\n");
 }
@@ -23,11 +24,12 @@ else if (n < 98)
 {
 for (x = n; x <= 98; x++)
 {
-printf("%d,  ",x);
 if (x == 98)
 {
 printf("%d",x);
+break;
 }
+printf("%d, ",x);
 }
 printf("\n");
 }
