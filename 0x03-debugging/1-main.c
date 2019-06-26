@@ -1,8 +1,10 @@
 #include <stdio.h>
+
 /**
  * main - causes an infinite loop
  * Return: 0
  */
+
 int main(void)
 {
 int i;
@@ -13,12 +15,10 @@ i = 0;
 
 while (i < 10)
 {
-putchar(i);
+putchar(i); /*i is not incrementing and is making the loop to go infinite*/
 
-/*i is not incrementing and is making the loop to go infinite*/
 }
 
 printf("Infinite loop avoided! \\o/\n");
-
 return (0);
 }
