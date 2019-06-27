@@ -3,20 +3,7 @@
 *main - check the code for Holberton School students.
 *Return: Always 0
 */
-void fizz_buzz(void);
-
 int main(void)
-{
-	fizz_buzz();
-	return (0);
-}
-
-/**
-*fizz_buzz - Function to print 1-100, including Fizz, Buzz, FizzBuzz
-*Return: Always 0
-*/
-
-void fizz_buzz(void)
 {
 	int x;
 
@@ -47,4 +34,5 @@ void fizz_buzz(void)
 			printf("%d ", x);
 		}
 	}
+return (0);
 }
