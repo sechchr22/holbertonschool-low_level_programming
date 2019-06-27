@@ -1,18 +1,22 @@
 #include <stdio.h>
 /**
 *main - check the code for Holberton School students.
-*fizzbuzz - Function to print 1-100, including Fizz and Buzz
 *Return: Always 0
 */
-void fizzbuzz(void);
+void fizz_buzz(void);
 
 int main(void)
 {
-	fizzbuzz();
+	fizz_buzz();
 	return (0);
 }
 
-void fizzbuzz(void)
+/**
+*fizz_buzz - Function to print 1-100, including Fizz, Buzz, FizzBuzz
+*Return: Always 0
+*/
+
+void fizz_buzz(void)
 {
 	int x;
 
