@@ -8,9 +8,9 @@ void puts2(char *str)
 {
 	int x = 0;
 
-	for (x = 0; x < 11; x +=2)
+	for (x = 0; x < 11; x += 2)
 	{
-		if((str[x] == '\0'))
+		if ((str[x] == '\0'))
 		{
 			break;
 		}
@@ -20,4 +20,4 @@ void puts2(char *str)
 		}
 	}
 	_putchar('\n');
-}	
+}
