@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 /**
 *rev_string - function to reverse a string
 *@s: name of the pointer
@@ -7,10 +7,18 @@
 void rev_string(char *s)
 {
 	int i;
-	int x = 8;
+	int x;
 	char c;
+	int j = 0;
 
-	for (i = 0; i <= 8; i++)
+	while (s[j] != '\0')
+	{
+		j++;
+	}
+
+	x = (j - 1);
+
+	for (i = 0; i <= x; i++)
 	{
 		if (i == x)
 		{
