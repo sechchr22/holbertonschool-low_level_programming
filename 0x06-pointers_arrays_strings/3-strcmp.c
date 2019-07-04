@@ -24,12 +24,11 @@ int _strcmp(char *s1, char *s2)
 				compare = (s1[x] - s2[x]);
 				break;
 			}
-			s1++;
-			s2++;
 		}
-			compare = (s1[x] - s2[x]);
 
 	}
+
+compare = (s1[x] - s2[x]);
 
 return (compare);
 }
