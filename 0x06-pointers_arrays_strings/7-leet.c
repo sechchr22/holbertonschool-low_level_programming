@@ -1,3 +1,5 @@
+
+
 /**
 *leet - function that encodes a string into 1337
 *@s : name of the pointer
