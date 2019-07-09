@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
 *_strstr - Write a function that locates a substring
 *@haystack: main C string to be scanned
@@ -8,21 +9,23 @@ char *_strstr(char *haystack, char *needle)
 {
 	int i;
 	int j;
+	int k;
 
 	for (i = 0; needle[i] != '\0'; i++)
 	{
 		for (j = 0; haystack[j] != '\0'; j++)
 		{
-			if (needle[i] == haystack[j])
+			k = j;
+			while (needle[i] == haystack[j] && needle[i] != '\0')
 			{
-				while (needle[i] == haystack[i] && needle[i] != '\0')
-				{
-					i++;
-					j++;
-				}
-				if (needle[i + 1] == '\0')
-				return (needle);
+				i++;
+				j++;
 			}
+			if (needle[i + 1] == '\0')
+			{
+				return (haystack + k);
+			}
+
 		}
 	}
 return ('\0');
