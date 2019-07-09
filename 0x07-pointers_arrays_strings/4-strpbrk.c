@@ -1,7 +1,8 @@
 /**
 *_strpbrk - function that searches a string for any of a set of bytes
 *@s: name of the first pointer
-*@accept: name of the second pointer
+*@accept: name of the second pointer¨
+*Return: string s from the position x or null if doesnt find any match
 */
 char *_strpbrk(char *s, char *accept)
 {
