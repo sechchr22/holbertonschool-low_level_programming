@@ -1,4 +1,4 @@
-wq/**
+/**
 *_strspn - function that gets the length of a prefix substring
 *@s: name of the pointer
 *@accept: name of the second pointer
