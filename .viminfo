@@ -9,8 +9,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
-:q
-:w
+:set number
 
 # Search String History (newest to oldest):
 
@@ -23,112 +22,65 @@
 # Registers:
 
 # File marks:
-'0  1  0  ~/holbertonschool-zero_day/0x02-vi/0-inserting
-'1  1  0  ~/holbertonschool-zero_day/0x02-vi/inserting
-'2  2  5  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
-'3  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
-'4  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
-'5  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
+'0  15  13  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+'1  9  6  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+'2  16  1  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+'3  5  68  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
 
 # Jumplist (newest first):
--'  1  0  ~/holbertonschool-zero_day/0x02-vi/0-inserting
--'  1  0  ~/holbertonschool-zero_day/0x02-vi/inserting
--'  2  5  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  2  5  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holbertonschool-zero_day/0x02-vi/inserting
--'  2  5  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  2  5  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holbertonschool-zero_day/0x02-vi/inserting
--'  2  5  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  2  5  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holbertonschool-zero_day/0x02-vi/inserting
--'  2  5  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  2  5  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  2  7  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  1  0  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
--'  3  24  ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
+-'  15  13  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  1  0  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  9  6  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  16  1  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  5  68  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  24  7  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  26  7  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  21  7  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  23  7  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  20  15  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  28  7  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  30  7  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  17  15  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  25  7  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  18  32  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  27  7  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  22  7  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  29  7  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  31  7  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+-'  19  32  ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
 
 # History of marks within files (newest to oldest):
 
-> ~/holbertonschool-zero_day/0x02-vi/0-inserting
-	"	1	0
-	^	1	1
-	.	1	0
-	+	1	2
-	+	2	0
-	+	1	0
-
-> ~/holbertonschool-zero_day/0x02-vi/inserting
-	"	1	0
-	^	1	1
-	.	1	1
-	+	1	1
-
-> ~/holberton-system_engineering-devops/0x01-shell_permissions/2-groups
-	"	2	5
-	^	2	6
-	.	2	6
-	+	2	6
-	+	2	6
-
-> ~/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty
-	"	2	7
-	^	2	8
-	.	2	8
-	+	1	11
-	+	3	24
-	+	2	26
-	+	2	8
+> ~/holbertonschool-low_level_programming/0x07-pointers_arrays_strings/2-strchr.c
+	"	15	13
+	^	15	14
+	.	15	13
+	+	15	8
+	+	16	0
+	+	16	12
+	+	9	7
+	+	9	7
+	+	10	0
+	+	15	21
+	+	15	32
+	+	15	15
+	+	15	19
+	+	18	0
+	+	15	15
+	+	15	1
+	+	15	15
+	+	15	15
+	+	15	21
+	+	16	0
+	+	15	30
+	+	5	68
+	+	19	0
+	+	16	0
+	+	9	24
+	+	15	25
+	+	10	0
+	+	15	15
+	+	17	13
+	+	16	0
+	+	10	0
+	+	15	13

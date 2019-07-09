@@ -1241,3 +1241,620 @@ cd ..
 git add --all
 git commit -m "adding all"
 git push -u origin master
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      clear
+ls
+cd holbertonschool-low_level_programming/
+mkdir 0x06-pointers_arrays_strings
+vim README.md
+l
+ls
+rm README.md 
+CLEAR
+clear
+ls
+cd 0x06-pointers_arrays_strings/
+vim README.md
+cd ..
+git add README.md 
+clear
+git add -a
+clear
+git add --all
+git commit -m "first commit"
+git push -u origin master
+clear
+ls
+cd 0x06-pointers_arrays_strings/
+vim holberton.h
+vim _putchar.c
+cler
+clear
+ls
+nano holberton.h 
+clear
+vim 0-main.c
+clear
+ls
+
+./0-strcat
+vim 0-strcat.c
+./0-strcat 
+
+vim 0-strcat.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+./0-strcat
+vim 0-strcat.c
+vim 0-main.c
+clear
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+./0-strcat
+ls
+vim 0-main.c
+vim 0-strcat.c
+man strcat
+vim 0-strcat.c
+man strcat
+vim 0-strcat.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+./0-strcat
+vim 0-strcat.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+./0-strcat
+vim 0-strcat.c
+man strcat
+vim 0-strcat.c
+clear
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+vim 0-strcat.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+./0-strcat 
+vim 0-strcat.c
+clear
+man strcat
+vim 0-strcat.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+./0-strcat 
+vim 0-strcat.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+vim 0-strcat.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+vim 0-strcat.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+./0-strcat 
+vim 0-strcat.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+vim 0-strcat.c
+clear
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+./0-strcat 
+vim 0-strcat.c
+man strcat
+vim 0-strcat.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+./0-strcat 
+vim 0-strcat.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+./0-strcat 
+vim 0-strcat.c
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+./0-strcat 
+vim 0-strcat.c
+man strcat
+vim 0-strcat.c
+clear
+gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-strcat.c -o 0-strcat
+./0-strcat 
+vim 0-strcat.c
+ls
+vim 0-strcat.c
+betty 0-strcat.c
+nano 0-strcat.c
+clear
+betty 0-strcat.c
+vim 0-strcat.c
+betty 0-strcat.c
+nano 0-strcat.c
+clear
+betty 0-strcat.c
+clear
+cd ..
+git add --all
+git commit -m "Write a function that concatenates two strings"
+git push -u origin master
+cd 0x05-pointers_arrays_strings/
+clear
+ls
+cd ..
+cd 0x06-pointers_arrays_strings/
+clear
+ls
+nano holberton.h 
+clear
+ls
+vim 1-main.c
+clear
+ls
+nano holberton.h
+man strncat
+nano holberton.h 
+clear
+ls
+vim 1-main.c
+vim 1-strncat.c
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strncat.c -o 1-strncat
+./1-strncat 
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strncat.c -o 1-strncat
+vim 1-strncat.c
+vim 0-strcat.c
+vim 1-strncat.c
+vim 0-strcat.c
+vim 1-strncat.c
+vim 0-strcat.c
+vim 1-strncat.c
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strncat.c -o 1-strncat
+./1-strncat 
+vim 1-strncat.c
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strncat.c -o 1-strncat
+./1-strncat 
+vim 1-strncat.c
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strncat.c -o 1-strncat
+./1-strncat 
+vim 1-strncat.c
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strncat.c -o 1-strncat
+./1-strncat 
+vim 1-strncat.c
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strncat.c -o 1-strncat
+./1-strncat 
+vim 1-strncat.c
+man strncat
+vim 1-strncat.c
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strncat.c -o 1-strncat
+vim 1-strncat.c
+man strncat
+vim 1-strncat.c
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strncat.c -o 1-strncat
+./1-strncat
+vim 1-strncat.c
+clear
+ls
+vim 1-strncat.c
+nano 1-strncat.c
+
+vim 1-strncat.c
+betty 1-strncat.c
+vim 1-strncat.c
+betty 1-strncat.c
+vim 1-strncat.c
+betty 1-strncat.c
+vim 1-strncat.c
+betty 1-strncat.c
+vim 1-strncat.c
+betty 1-strncat.c
+vim 1-strncat.c
+betty 1-strncat.c
+vim 1-strncat.c
+betty 1-strncat.c
+vim 1-strncat.c
+betty 1-strncat.c
+clear
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strncat.c -o 1-strncat
+vim 1-strncat.c
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strncat.c -o 1-strncat
+vim 1-strncat.c
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strncat.c -o 1-strncat
+betty 1-strncat.c
+./1-strncat
+clear
+cd ..
+git add --all
+git commit -m "Write a function that concatenates two strings"
+git add --all
+git reset
+git status
+git push -u origin master
+cd  0x06-pointers_arrays_strings/
+clear
+nano holberton.h 
+vim 2-main.c
+man strcpy
+vim 2-strncpy.c
+
+vim 2-strncpy.c
+clear
+gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-strncat.c -o 1-strncat
+./1-strncat
+clear
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+
+vim 2-strncpy.c
+vim 2-main.c
+vim 2-strncpy.c
+clear
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+vim 2-main.c
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+betty 2-strncpy.c
+nano 2-strncpy.c
+clear
+betty 2-strncpy.c
+vim 2-strncpy.c
+betty 2-strncpy.c
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+cd ..
+git add --all
+git commit -m "Write a function that copies a string"
+git push -u origin master
+cd 0x06-pointers_arrays_strings/
+clear
+ls
+betty 2-strncpy.c
+vim 2-strncpy.c
+betty 2-strncpy.c
+vim 2-strncpy.c
+betty 2-strncpy.c
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+vim 2-strncpy.c
+betty 2-strncpy.c
+nano 2-strncpy.c
+betty 2-strncpy.c
+vim 2-strncpy.c
+clear
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+vim 2-strncpy.c
+gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strncpy.c -o 2-strncpy
+./2-strncpy
+cd ..
+git add --all
+git commit -m "Write a function that copies a string"
+git push -u origin master
+cd 0x06-pointers_arrays_strings/
+
+ls
+betty 2-strncpy.c
+nano 2-strncpy.c
+vim 2-strncpy.c
+betty 2-strncpy.c
+clear
+cd ..
+git add --all
+git commit -m "function to copy a string"
+git push -u origin master
+cd 0x06-pointers_arrays_strings/
+clear
+nano holberton.h 
+man strncpy
+vim 2-strncpy.c
+./2-strncpy 
+vim 2-strncpy.c
+betty 2-strncpy.c
+cd ..
+git add --all
+git commit -m "Write a function that copies a string"
+git push -u origin master
+clear
+cd 0x06-pointers_arrays_strings/
+clear
+ls
+nano holberton.h
+vim 3-main.c
+vim 3-strcmp.c
+strcmp
+clear
+man strcmp
+cd 0x06
+clear
+ls
+vim 3-strcmp.c
+./3-strcmp 
+vim 3-strcmp.c
+gcc -Wall -pedantic -Werror -Wextra 3-main.c 3-strcmp.c -o 3-strcmp
+./3-strcmp
+vim 3-strcmp.c
+gcc -Wall -pedantic -Werror -Wextra 3-main.c 3-strcmp.c -o 3-strcmp
+./3-strcmp
+vim 3-strcmp.c
+gcc -Wall -pedantic -Werror -Wextra 3-main.c 3-strcmp.c -o 3-strcmp
+./3-strcmp
+betty 3-strcmp.c
+nano 3-strcmp.c
+betty 3-strcmp.c
+nano 3-strcmp.c
+betty 3-strcmp.c
+vim 3-strcmp.c
+betty 3-strcmp.c
+cd ..
+git add --all
+git commit -m "Write a function that compares two strings"
+git push -u origin master
+cd 0x06-pointers_arrays_strings/
+vim 3-strcmp.c
+gcc -Wall -pedantic -Werror -Wextra 3-main.c 3-strcmp.c -o 3-strcmp
+./3-strcmp 
+vim 3-strcmp.c
+gcc -Wall -pedantic -Werror -Wextra 3-main.c 3-strcmp.c -o 3-strcmp
+./3-strcmp 
+vim 3-strcmp.c
+gcc -Wall -pedantic -Werror -Wextra 3-main.c 3-strcmp.c -o 3-strcmp
+./3-strcmp 
+betty 3-strcmp.c
+nano 3-strcmp.c
+vim 3-strcmp.c
+betty 3-strcmp.c
+cd ..
+git add --all
+git commit -m "Write a function that compares two strings like strcmp does"
+git push -u origin master
+cd 0x06-pointers_arrays_strings/
+clear
+nano holberton.h 
+vim 4-main.c
+vim 4-rev_array.c
+nano holberton.h 
+vim 4-rev_array.c
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-rev_array.c -o 4-rev_array
+./4-rev_array 
+vim 4-rev_array.c
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-rev_array.c -o 4-rev_array
+vim 4-rev_array.c
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-rev_array.c -o 4-rev_array
+vim 4-rev_array.c
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-rev_array.c -o 4-rev_array
+./4-rev_array 
+vim 4-rev_array.c
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-rev_array.c -o 4-rev_array
+./4-rev_array 
+vim 4-rev_array.c
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-rev_array.c -o 4-rev_array
+./4-rev_array 
+vim 4-rev_array.c
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-rev_array.c -o 4-rev_array
+./4-rev_array 
+vim 4-rev_array.c
+clear
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-rev_array.c -o 4-rev_array
+vim 4-rev_array.c
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-rev_array.c -o 4-rev_array
+./4-rev_array 
+vim 4-rev_array.c
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-rev_array.c -o 4-rev_array
+./4-rev_array 
+vim 4-rev_array.c
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-rev_array.c -o 4-rev_array
+./4-rev_array 
+vim 4-rev_array.c
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-rev_array.c -o 4-rev_array
+./4-rev_array 
+vim 4-rev_array.c
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-rev_array.c -o 4-rev_array
+clear
+./4-rev_array
+vim 4-rev_array.c
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-rev_array.c -o 4-rev_array
+./4-rev_array
+vim 4-rev_array.c
+gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-rev_array.c -o 4-rev_array
+./4-rev_array
+betty 4-rev_array.c
+nano 4-rev_array.c
+betty 4-rev_array.c
+nano 4-rev_array.c
+betty 4-rev_array.c
+nano 4-rev_array.c
+clear
+betty 4-rev_array.c
+clear
+cd ..
+git add --all
+git commit -m "Write a function that reverses the content of an array of integers"
+git push -u origin master
+cd 0x06-pointers_arrays_strings/
+clear
+ls
+nano holberton.h 
+vim 5-main.c
+clear
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-strin
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+./5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+./5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+./5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+./5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+vim 5-string_toupper.c
+./5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+./5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+./5-string_toupper
+vim 5-string_toupper.c
+vim 5-string_touppeclear
+clear
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+vim 5-string_touppeclear
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+./5-string_toupper
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+./5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+./5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+./5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+./5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+./5-string_toupper
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+./5-string_toupper
+vim 5-string_toupper.c
+clear
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+./5-string_toupper
+nano 5-string_toupper.c
+betty 5-string_toupper.c
+vim 5-string_toupper.c
+betty 5-string_toupper.c
+vim 5-string_toupper.c
+gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
+betty 5-string_toupper.c
+vim 5-string_toupper.c
+betty 5-string_toupper.c
+clear
+cd ..
+git add --all
+git commit -m "Write a function that changes all lowercase letters of a string to uppercase"
+git push -u origin master
+cd 0x06-pointers_arrays_strings/
+clear
+nano holberton.h 
+vim 6-main.c
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+./6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+./6-cap
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+./6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+./6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+./6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+./6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+./6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+./6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+./6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+vim 6-cap_string.c
+gcc -Wall -pedantic -Werror -Wextra 6-main.c 6-cap_string.c -o 6-cap
+vim 6-cap_string.c
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
