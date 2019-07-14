@@ -1,8 +1,9 @@
 /**
-*atoi - empty function
+*_atoi - empty function
 *return: always 0
 */
-int atoi(void)
+int _atoi(char *s)
 {
+	(void)*s;
 	return (0);	
 }
