@@ -1,3 +1,4 @@
+
 /**
  *_isalpha - function to check if c is lower or either an upercase letter
  *@c: character to check

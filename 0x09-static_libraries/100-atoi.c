@@ -1,10 +1,8 @@
 /**
-*_atoi: empty
-*@s: name of the pointer
-*Return: always 0
+*atoi - empty function
+*return: always 0
 */
-int _atoi(char *s)
+int atoi (void)
 {
-	*s = *s;
-	return (0);
+	return (0);	
 }

@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*_strstr - function that locates a substring
+*_strstr - Write a function that locates a substring
 *@haystack: main C string to be scanned
 *@needle: small string to be searched with-in haystack string.
 *Return: pointer to the value of small string if it matchs, null if not.
@@ -31,4 +31,3 @@ char *_strstr(char *haystack, char *needle)
 	}
 return (0);
 }
-
