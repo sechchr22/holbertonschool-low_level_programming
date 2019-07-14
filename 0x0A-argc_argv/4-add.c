@@ -21,6 +21,13 @@ int main(int argc, char **argv)
 
 		else
 		{
+			if (atoi(argv[i]) < 0)
+			{
+				printf("Error\n");
+				return (0);
+			}
+
+			else
 			sum = sum + atoi(argv[i]);
 		}
 	}
