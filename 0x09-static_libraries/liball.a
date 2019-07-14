@@ -1,5 +1,5 @@
 !<arch>
-0-isupper.c/    1562959655  1000  1000  100664  227       `
+0-isupper.c/    1563121026  1000  1000  100664  227       `
 /**
 *_isupper - function to check if a character is uppercase
 *@c: character to check
@@ -17,7 +17,7 @@ int _isupper(int c)
 	}
 }
 
-0-memset.c/     1562960021  1000  1000  100664  300       `
+0-memset.c/     1563121026  1000  1000  100664  300       `
 /**
 *_memset - fills the first n bytes of the memory with the constant byte b
 *@s: name of the pointer
@@ -35,18 +35,16 @@ char *_memset(char *s, char b, unsigned int n)
 	}
 return (s);
 }
-100-atoi.c/     1562963748  1000  1000  100664  110       `
+100-atoi.c/     1563121443  1000  1000  100664  82        `
 /**
-*_atoi: empty
-*@s: name of the pointer
-*Return: always 0
+*atoi - empty function
+*return: always 0
 */
-int _atoi(char *s)
+int atoi (void)
 {
-	*s = *s;
-	return (0);
+	return (0);	
 }
-1-isdigit.c/    1562959696  1000  1000  100664  239       `
+1-isdigit.c/    1563121026  1000  1000  100664  239       `
 /**
 *_isdigit - function to check if is a digit from 0 to 9
 *@c: character to check
@@ -64,7 +62,7 @@ int _isdigit(int c)
 	}
 }
 
-1-memcpy.c/     1562960052  1000  1000  100664  340       `
+1-memcpy.c/     1563121026  1000  1000  100664  340       `
 /**
 *_memcpy - that copies memory area
 *@dest: name of the first pointer (destiny)
@@ -83,7 +81,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 return (dest);
 }
-2-strchr.c/     1562960082  1000  1000  100664  329       `
+2-strchr.c/     1563121026  1000  1000  100664  329       `
 /**
 *_strchr - function to write a function that locates a character in a string
 *@s: name pointer
@@ -103,7 +101,7 @@ char *_strchr(char *s, char c)
 return ('\0');
 }
 
-2-strlen.c/     1562959811  1000  1000  100664  217       `
+2-strlen.c/     1563121026  1000  1000  100664  217       `
 #include <stdio.h>
 /**
 *_strlen - Return the lenght of a string
@@ -123,7 +121,7 @@ int _strlen(char *s)
 	return (len);
 }
 
-3-islower.c/    1562959325  1000  1000  100664  272       `
+3-islower.c/    1563121026  1000  1000  100664  272       `
 /**
 * _islower - Function to check  if i have a lowercase character
 * @c: character to check
@@ -142,7 +140,7 @@ return (0);
 }
 return (0);
 }
-3-puts.c/       1562959874  1000  1000  100664  217       `
+3-puts.c/       1563121026  1000  1000  100664  217       `
 #include "holberton.h"
 /**
 *_puts - to print an string
@@ -160,7 +158,7 @@ void _puts(char *str)
 		_putchar('\n');
 }
 
-3-strcmp.c/     1562962408  1000  1000  100664  512       `
+3-strcmp.c/     1563121026  1000  1000  100664  512       `
 /**
 *_strcmp - function to compare two strings lexicographically
 *@s1: name of the pointer 1
@@ -195,7 +193,7 @@ compare = (s1[x] - s2[x]);
 
 return (compare);
 }
-3-strspn.c/     1562960148  1000  1000  100664  483       `
+3-strspn.c/     1563121026  1000  1000  100664  483       `
 /**
 *_strspn - function that gets the length of a prefix substring
 *@s: name of the pointer
@@ -226,7 +224,8 @@ unsigned int _strspn(char *s, char *accept)
 return (k);
 }
 
-4-isalpha.c/    1562959418  1000  1000  100664  300       `
+4-isalpha.c/    1563121026  1000  1000  100664  301       `
+
 /**
  *_isalpha - function to check if c is lower or either an upercase letter
  *@c: character to check
@@ -248,7 +247,8 @@ return (0);
 }
 }
 
-4-strpbrk.c/    1562962461  1000  1000  100664  421       `
+
+4-strpbrk.c/    1563121026  1000  1000  100664  421       `
 /**
 *_strpbrk - function that searches a string for any of a set of bytes
 *@s: name of the first pointer
@@ -271,10 +271,10 @@ char *_strpbrk(char *s, char *accept)
 return ('\0');
 }
 
-5-strstr.c/     1562960385  1000  1000  100664  548       `
+5-strstr.c/     1563121026  1000  1000  100664  555       `
 #include <stdio.h>
 /**
-*_strstr - function that locates a substring
+*_strstr - Write a function that locates a substring
 *@haystack: main C string to be scanned
 *@needle: small string to be searched with-in haystack string.
 *Return: pointer to the value of small string if it matchs, null if not.
@@ -306,7 +306,8 @@ char *_strstr(char *haystack, char *needle)
 return (0);
 }
 
-6-abs.c/        1562959572  1000  1000  100664  257       `
+6-abs.c/        1563121026  1000  1000  100664  258       `
+
 /**
  *_abs - gives the absolute value of a number
  *Return: x if x is either positive or negative, 0 if x = 0
@@ -329,8 +330,7 @@ else
 return (n);
 }
 }
-
-9-strcpy.c/     1562959916  1000  1000  100664  274       `
+9-strcpy.c/     1563121026  1000  1000  100664  274       `
 /**
 *_strcpy - function to copy an string
 *@dest: name of the pointer
@@ -349,7 +349,7 @@ char *_strcpy(char *dest, char *src)
 
 return (dest);
 }
-main.c/         1562962812  1000  1000  100664  153       `
+main.c/         1563121939  1000  1000  100664  153       `
 #include "holberton.h"
 
 int main(void)
@@ -358,11 +358,103 @@ int main(void)
     return (0);
 }
 
-_putchar.c/     1562960992  1000  1000  100664  73        `
+_putchar.c/     1563121026  1000  1000  100664  247       `
 #include <unistd.h>
 
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
+}
+
+0-strcat.c/     1563121026  1000  1000  100664  487       `
+
+/**
+*_strcat - function that concatenate 2 strings
+*@dest: name of the first pointer
+*@src: name of the second pointer
+*Return: pointer that points to the memory address where is the value of dest
+*/
+char *_strcat(char *dest, char *src)
+{
+	int x;
+	int k;
+
+	/*to find lenght of dest*/
+	x = 0;
+	while (dest[x] != '\0')
+	{
+		x++;
+	}
+
+	/*append src to dest*/
+	for (k = 0; src[k] != '\0'; k++)
+	{
+		dest[x + k] = src[k];
+	}
+
+	/*add the null to dest*/
+		dest[x + k] = '\0';
+
+return (dest);
+}
+
+1-strncat.c/    1563121026  1000  1000  100664  580       `
+/**
+*_strncat - function to concatenate the n string
+*@dest: name of the first pointer
+*@src: name of the second pointer}
+*@n: number that will give the position of the string to copie
+*Return: pointer that points to the value of dest
+*/
+char *_strncat(char *dest, char *src, int n)
+{
+	int x;
+	int j;
+	/**to know the lenght of dest*/
+	x = 0;
+	while (dest[x] != '\0')
+	{
+		x++;
+	}
+	/**to concatenate the n character of the string src into dest*/
+	for (j = 0; j < n && src[j] != '\0'; j++)
+	{
+		dest[x + j] = src[j];
+	}
+	/**adding the null*/
+		dest[x + j] = '\0';
+
+return (dest);
+}
+2-strncpy.c/    1563121026  1000  1000  100664  421       `
+/**
+*_strncpy - function to copy a string
+*@dest: name of the first pointer
+*@src: name of the second pointer
+*@n: number that will tell me till what position of src i want to copy
+*Return: a pointer that points to the value of
+*/
+char *_strncpy(char *dest, char *src, int n)
+{
+	int x;
+
+	for (x = 0; x < n && src[x] != '\0'; x++)
+	{
+		dest[x] = src[x];
+	}
+
+	for ( ; x < n ; x++)
+	{
+		dest[x] = '\0';
+	}
+
+return (dest);
 }
 
