@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
 *main - function to add positive numbers
 *@argc: number of command line arguments
@@ -9,21 +10,27 @@
 int main(int argc, char **argv)
 {
 	int i;
-	unsigned int sum = 0;
+	int j;
+	int sum = 0;
+	int n;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (!(argv[i][0] >= 48 && argv[i][0] <= 57))
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			printf("Error\n");
-			return (0);
+			n = isdigit(argv[i][j]);
+
+			if (n == 0)
+			{
+				printf("Error\n");
+				return (0);
+			}
+
 		}
 
-		else
 		sum = sum + atoi(argv[i]);
 	}
 
-	printf("%d\n", sum);
-
+printf("%d\n", sum);
 return (0);
 }
