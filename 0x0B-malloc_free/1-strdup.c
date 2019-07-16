@@ -48,7 +48,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (i = 0; i < a ; i++)
+	for (i = 0; i <= a ; i++)
 	{
 		s[i] = str[i];
 	}
