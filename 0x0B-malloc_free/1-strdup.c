@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
 *_strlen - Return the lenght of a string
@@ -39,7 +40,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	s = malloc(a);
+	s = malloc(a + 1);
 
 	if (s == NULL)
 	{
@@ -50,7 +51,6 @@ char *_strdup(char *str)
 	{
 		s[i] = str[i];
 	}
-
 		s[i + 1] = '\0';
 
 return (s);
