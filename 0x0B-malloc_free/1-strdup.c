@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
 
 /**
@@ -48,11 +47,12 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (i = 0; i < (a + 1) ; i++)
+	for (i = 0; i < a; i++)
 	{
 		s[i] = str[i];
 	}
-		/**s[i + 1] = '\0';*/
+
+		s[i + 1] = '\0';
 
 return (s);
 }
