@@ -39,14 +39,14 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	s = malloc(a + 1);
+	s = malloc(a);
 
 	if (s == NULL)
 	{
 		return (NULL);
 	}
 
-	for (i = 0; i <= a; i++)
+	for (i = 0; i < a; i++)
 	{
 		s[i] = str[i];
 	}
