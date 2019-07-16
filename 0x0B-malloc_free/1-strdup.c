@@ -41,17 +41,18 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	s = malloc(a);
+	s = malloc(a + 1);
 
 	if (s == NULL)
 	{
 		return (NULL);
 	}
 
-	for (i = 0; i <= a ; i++)
+	for (i = 0; i < a ; i++)
 	{
 		s[i] = str[i];
 	}
+		s[i] = '\0';
 
 return (s);
 }
