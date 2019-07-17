@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 /**
 *_strlen - Return the lenght of a string
 *@s: name of the pointer
@@ -19,39 +18,45 @@ int _strlen(char *s)
 }
 
 /**
+*argstostr - function that concatenates the arguments
+*@ac: argument count
+*@av: argument vector
+*Return: NULL if ac or av equal to 0 or if malloc fails
+*pointer to resultant string otherwise
 */
 
 char *argstostr(int ac, char **av)
 {
 	char *buf;
-	int i, a, m, l; 
+	int i, a, m, l, k;
 	int sum = 0;
 
 	if (ac == 0 || av == NULL)
-        return (NULL);
-	
+	return (NULL);
+
 	for (i = 0; i < ac; i++)
 	{
-		a = _strlen(av[i]);		
+		a = _strlen(av[i]);
 		sum = sum + a;
 	}
 
-	printf("%d\n", sum);	
+	buf = malloc(sum * sizeof(char));
 
-	buf = malloc(sum * sizeof(char));	
-	
 	if (buf == NULL)
 	return (NULL);
- 	
+
+	k = 0;
+
 	for (m = 0; m < ac; m++)
 	{
 		for (l = 0; av[m][l] != '\0'; l++)
 		{
-			buf[m + l] = av[m][l];
+			buf[k] = av[m][l];
+			k++;
 		}
 
-		buf[m + l] = '\n';
+		buf[k] = '\n';
 	}
-	
+
 return (buf);
 }
