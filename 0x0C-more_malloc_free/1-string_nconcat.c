@@ -37,10 +37,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 	{
 		s2 = "";
-		n = 0;
+		n = 1;
 	}
 
-	if (n >= _strlen(s2))
+	else if (n >= _strlen(s2))
 	n = _strlen(s2);
 
 	len = _strlen(s1) + _strlen(s2) + 1;
