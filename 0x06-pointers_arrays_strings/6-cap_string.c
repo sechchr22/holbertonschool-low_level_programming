@@ -1,5 +1,4 @@
-/**
-*cap_string - function to capitalize a text
+/*cap_string - function to capitalize a text
 *@s: name of the pointer
 *Return: pointer that points to the value of s
 */
@@ -20,10 +19,7 @@ int c[12] = {10, 32, 44, 46, 59, 33, 63, 34, 40, 41, 123, 125};
 		{
 			for (k = 0; k < 12; k++)
 			{
-				if (s[y] == 9)
-				s[y] = 32;
-
-				else if (s[y] == c[k] && ((s[y + 1] >= 97 && s[y + 1] <= 122)))
+				if (s[y] == c[k] && ((s[y + 1] >= 97 && s[y + 1] <= 122)))
 				s[y + 1] -= 32;
 			}
 		}
