@@ -40,7 +40,7 @@ char *argstostr(int ac, char **av)
 		sum = sum + a;
 	}
 
-	buf = malloc(sum * sizeof(char));
+	buf = malloc(sum * ac * sizeof(char));
 
 	if (buf == NULL)
 	return (NULL);
@@ -56,6 +56,7 @@ char *argstostr(int ac, char **av)
 		}
 
 		buf[k] = '\n';
+		k++;
 	}
 
 return (buf);
