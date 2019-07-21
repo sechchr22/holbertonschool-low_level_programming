@@ -1,12 +1,13 @@
-/*cap_string - function to capitalize a text
+/**
+*cap_string - function to capitalize a text
 *@s: name of the pointer
 *Return: pointer that points to the value of s
 */
 char *cap_string(char *s)
 {
 
-int y, k;
-int c[12] = {10, 32, 44, 46, 59, 33, 63, 34, 40, 41, 123, 125};
+	int y, k;
+	int c[13] = {9, 10, 32, 44, 46, 59, 33, 63, 34, 40, 41, 123, 125};
 
 	for (y = 0; s[y] != '\0'; y++)
 	{
