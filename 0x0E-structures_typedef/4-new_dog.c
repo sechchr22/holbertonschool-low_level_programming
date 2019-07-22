@@ -21,6 +21,24 @@ return (dest);
 }
 
 /**
+*_strlen - Return the lenght of a string
+*@s: name of the pointer
+*Return: lenght of the string
+*/
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (*s != 0)
+	{
+		s++;
+		len++;
+	}
+
+	return (len);
+}
+
+/**
  * new_dog - function to create a new dog
  * @name: name of dog
  * @age: age of dog
@@ -36,14 +54,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	float new_age;
 	int len_name, len_owner;
 
-	len_name = sizeof(name);
-	len_owner = sizeof(owner);
+	len_name = _strlen(name);
+	len_owner = _strlen(owner);
 
 	new_dog = malloc(sizeof(struct dog));
 	if (new_dog == NULL)
 	return (NULL);
 
-	new_name = malloc((len_name - 1) * sizeof(char));
+	new_name = malloc((len_name + 1) * sizeof(char));
 
 	if (new_name == NULL)
 	{
@@ -51,7 +69,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	new_owner = malloc((len_owner - 1) * sizeof(char));
+	new_owner = malloc((len_owner + 1) * sizeof(char));
 
 	if (new_owner == NULL)
 	{
