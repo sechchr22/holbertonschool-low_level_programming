@@ -2,7 +2,6 @@
 #include "dog.h"
 /**
  * init_dog - to initialize a variable of type struct dog
- * @strug dog: structure
  * @d: pointer to dog structure
  * @name: char pointer
  * @age: int
