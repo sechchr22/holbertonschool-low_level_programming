@@ -20,9 +20,9 @@ void print_all(const char * const format, ...)
 	int i; /*para recorrer el string que llega a *format*/
 	int j; /*para recorrer la estructura*/
 	int len; /*guardar el largo del string que llega a *format*/
-	char *a; /*para guardar el formatspecifier*/
-	char *b; /*para guardar el formatspecifier_2*/
-	char *c; /*para guardar el argumento*/
+	/*char *a;*/ /*para guardar el formatspecifier*/
+	/*char *b;*/ /*para guardar el formatspecifier_2*/
+	/*char *c;*/ /*para guardar el argumento*/
 
 	len = strlen(format);
 	
@@ -33,11 +33,14 @@ void print_all(const char * const format, ...)
 
 	while (i < len)
 	{
-		while (array[j].cha != '0')
-		{
-			if (format[i] == array[j].cha)
+		while (array[j].character != '0')
+		{				
+			if (format[i] == array[j].character)
 			{
-				a = array[j].fs;
+				printf("breve\n");
+				j = 0;
+				break;
+				/*a = array[j].fs;
 			
 				b = array[j].fs_2;
 
@@ -46,10 +49,11 @@ void print_all(const char * const format, ...)
 				if ( (i + 1) == len)
 				printf(b, c);
 				
-				printf(a, c);
-			}
+				printf(a, c);*/
+			}	
 		j++;
-		}		
+		}
+				
 	i++;
 	}
 	va_end(ap);
