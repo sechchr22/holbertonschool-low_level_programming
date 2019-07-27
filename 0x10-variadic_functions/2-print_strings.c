@@ -4,23 +4,23 @@
  * print_strings - Write a function that prints strings, followed by a new line
  * @separator: string to be printed between strings
  * @n: number of strings passed
- * Return: nothing 
+ * Return: nothing
 */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
-	unsigned i, b;
-	char *a; 
-	
+	unsigned int i, b;
+	char *a;
+
 	if (separator == NULL)
 	separator = "";
-	
+
 	b = n - 1;
 	va_start(ap, n);
 
 	for (i = 0; i < b; i++)
 	{
-		a = va_arg(ap, char*);		
+		a = va_arg(ap, char*);
 
 		if (a == NULL)
 		a = "(nil)";
@@ -31,4 +31,4 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		printf("%s\n", a);
 
 	va_end(ap);
-}	
+}
