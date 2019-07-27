@@ -26,7 +26,7 @@ void print_all(const char * const format, ...)
 	int len; /*guardar el largo del string que llega a *format*/
 	char *a; /*para guardar el formatspecifier*/
 	char *b; /*para guardar el formatspecifier_2*/
-	/*char *c;*/ /*para guardar va_arg */
+	char *c; /*para guardar va_arg char*/
 
 	len = strlen(format);
 
@@ -44,7 +44,14 @@ void print_all(const char * const format, ...)
 				a = array[j].fs;
 				b = array[j].fs_2;
 			
-				/*desde aca lo que copiaste*/
+				if (format[i] == 's' && c == NULL)
+ 				{
+					c = va_arg(ap, char*);
+					c = "(nil)";
+					printf("%s", c);
+					j = 0;
+					break;
+ 				} 
 
 				if ((i + 1) == len)
 				{
