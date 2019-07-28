@@ -1,37 +1,22 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <string.h>
 #include <stdarg.h>
 /**
- * check_last - to check the last argument and print it without ", "
- * @c: character to check
- * @ap: is a variable of type va_list and it will store the last
- * argument in my variatic function print_all
- * Return: nothing
+*_strlen - Return the lenght of a string
+*@s: name of the pointer
+*Return: lenght of the string
 */
-void check_last(char c, va_list ap)
+unsigned int _strlen(const char *s)
 {
-	char *a;
+	int len = 0;
 
-	switch (c)
+	while (*s != 0)
 	{
-		case 'c':
-				printf("%c\n", va_arg(ap, int));
-				break;
-		case 'i':
-				printf("%i\n", va_arg(ap, int));
-				break;
-		case 'f':
-				printf("%f\n", va_arg(ap, double));
-				break;
-		case 's':
-				a = va_arg(ap, char*);
-				if (a == NULL)
-				a = "(nil)";
-				printf("%s\n", a);
-				break;
+		s++;
+		len++;
 	}
-	va_end(ap);
+
+	return (len);
 }
 /**
  * print_all - function to print all
@@ -41,32 +26,43 @@ void check_last(char c, va_list ap)
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	unsigned int i = 0;
+	unsigned int i = 0, b;
 	char *a;
 
+	if (format == NULL)
+	return;
 	va_start(ap, format);
-	while (i < (strlen(format) - 1))
+	b = (_strlen(format) - 1);
+	while (i < _strlen(format))
 	{
 		switch (format[i])
 		{
 			case 'c':
-					printf("%c, ", va_arg(ap, int));
+					printf("%c", va_arg(ap, int));
 					break;
 			case 'i':
-					printf("%i, ", va_arg(ap, int));
+					printf("%i", va_arg(ap, int));
 					break;
 			case 'f':
-					printf("%f, ", va_arg(ap, double));
+					printf("%f", va_arg(ap, double));
 					break;
 			case 's':
 					a = va_arg(ap, char*);
 					if (a == NULL)
 					a = "(nil)";
-					printf("%s, ", a);
+					printf("%s", a);
 					break;
+
+		}
+
+		while ((i < b && format[i] == 'c') || (i < b && format[i] == 'i') ||
+											(i < b && format[i] == 'f') || (i < b && format[i] == 's'))
+		{
+			printf(", ");
+			break;
 		}
 	i++;
 	}
-	check_last(format[i], ap);
+	printf("\n");
 	va_end(ap);
 }
