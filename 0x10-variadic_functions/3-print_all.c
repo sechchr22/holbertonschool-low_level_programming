@@ -2,71 +2,71 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdarg.h>
-/*
- *
- * print_all - function to print "all"
- * @format: pointer that will recieve valid formats and not
- * valid formats represented as chars in a string
+/**
+ * check_last - to check the last argument and print it without ", "
+ * @c: character to check
+ * @ap: is a variable of type va_list and it will store the last
+ * argument in my variatic function print_all
+ * Return: nothing
+*/
+void check_last(char c, va_list ap)
+{
+	char *a;
+
+	switch (c)
+	{
+		case 'c':
+				printf("%c\n", va_arg(ap, int));
+				break;
+		case 'i':
+				printf("%i\n", va_arg(ap, int));
+				break;
+		case 'f':
+				printf("%f\n", va_arg(ap, double));
+				break;
+		case 's':
+				a = va_arg(ap, char*);
+				if (a == NULL)
+				a = "(nil)";
+				printf("%s\n", a);
+				break;
+	}
+	va_end(ap);
+}
+/**
+ * print_all - function to print all
+ * @format: pointer to a string that will tell me the format
  * Return: nothing
 */
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-
-	format_t array[] = {
-	{'c', "%c, ", "%c\n"},
-	{'i', "%i, ", "%i\n"},
-	{'f', "%f, ", "%f\n"},
-	{'s', "%s, ", "%s\n"},
-	{'0', NULL, NULL}
-	};
-
-	int i; /*para recorrer el string que llega a *format*/
-	int j; /*para recorrer la estructura*/
-	int len; /*guardar el largo del string que llega a *format*/
-	char *a; /*para guardar el formatspecifier*/
-	char *b; /*para guardar el formatspecifier_2*/
-	char *c; /*para guardar va_arg char*/
-
-	len = strlen(format);
-
-	i = 0;
-	j = 0;
+	unsigned int i = 0;
+	char *a;
 
 	va_start(ap, format);
-
-	while (i < len)
+	while (i < (strlen(format) - 1))
 	{
-		while (array[j].character != '0')
+		switch (format[i])
 		{
-			if (format[i] == array[j].character)
-			{
-				a = array[j].fs;
-				b = array[j].fs_2;
-			
-				if (format[i] == 's' && c == NULL)
- 				{
-					c = va_arg(ap, char*);
-					c = "(nil)";
-					printf("%s", c);
-					j = 0;
+			case 'c':
+					printf("%c, ", va_arg(ap, int));
 					break;
- 				} 
-
-				if ((i + 1) == len)
-				{
-					printf(b, va_arg(ap, int));
-					return;
-				}
-
-				printf(a, va_arg(ap, int));
-				j = 0;
-				break;
-			}
-		j++;
+			case 'i':
+					printf("%i, ", va_arg(ap, int));
+					break;
+			case 'f':
+					printf("%f, ", va_arg(ap, double));
+					break;
+			case 's':
+					a = va_arg(ap, char*);
+					if (a == NULL)
+					a = "(nil)";
+					printf("%s, ", a);
+					break;
 		}
-	j = 0;
 	i++;
 	}
+	check_last(format[i], ap);
 	va_end(ap);
 }
