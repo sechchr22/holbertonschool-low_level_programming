@@ -49,7 +49,9 @@ void print_all(const char * const format, ...)
 			case 's':
 					a = va_arg(ap, char*);
 					if (a == NULL)
-					a = "(nil)";
+					{
+						a = "(nil)";
+					}
 					printf("%s", a);
 					break;
 
@@ -60,9 +62,7 @@ void print_all(const char * const format, ...)
 		{
 			printf(", ");
 			break;
-		}
-	i++;
-	}
-	printf("\n");
+		} i++;
+	} printf("\n");
 	va_end(ap);
 }
