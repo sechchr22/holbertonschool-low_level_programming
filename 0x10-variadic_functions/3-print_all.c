@@ -2,23 +2,6 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
-*_strlen - Return the lenght of a string
-*@s: name of the pointer
-*Return: lenght of the string
-*/
-unsigned int _strlen(const char *s)
-{
-	int len = 0;
-
-	while (*s != 0)
-	{
-		s++;
-		len++;
-	}
-
-	return (len);
-}
-/**
  * print_all - function to print all
  * @format: pointer to a string that will tell me the format
  * Return: nothing
@@ -26,14 +9,15 @@ unsigned int _strlen(const char *s)
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	unsigned int i = 0, b;
+	unsigned int i = 0;
 	char *a;
 
 	if (format == NULL)
 	return;
+
 	va_start(ap, format);
-	b = (_strlen(format) - 1);
-	while (i < _strlen(format))
+
+	while (format[i] != '\0')
 	{
 		switch (format[i])
 		{
@@ -57,12 +41,13 @@ void print_all(const char * const format, ...)
 
 		}
 
-		while ((i < b && format[i] == 'c') || (i < b && format[i] == 'i') ||
-											(i < b && format[i] == 'f') || (i < b && format[i] == 's'))
+		while ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
+											format[i] == 's') && (format[i + 1] != '\0'))
 		{
 			printf(", ");
 			break;
 		} i++;
-	} printf("\n");
+	}
+	printf("\n");
 	va_end(ap);
 }
