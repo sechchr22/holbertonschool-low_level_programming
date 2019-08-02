@@ -2,6 +2,23 @@
 #include <stdlib.h>
 #include <string.h>
 /**
+*_strlen - Return the lenght of a string
+*@s: name of the pointer
+*Return: lenght of the string
+*/
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (*s != 0)
+	{
+		s++;
+		len++;
+	}
+
+	return (len);
+}
+/**
  * add_node_end - Write a function that adds a new node
  * at the end of a list_t list
  * @head: pointer that points to &head
@@ -23,7 +40,7 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	new->str = strdup(str);
 
-	new->len = strlen(str);
+	new->len = _strlen(str);
 	new->next = NULL;
 
 	if (*head == NULL)
