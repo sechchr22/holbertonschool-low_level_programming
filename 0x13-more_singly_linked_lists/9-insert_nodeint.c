@@ -49,7 +49,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	return (add_nodeint(head, n));
 
 	new = (struct listint_s *)malloc(sizeof(struct listint_s));
-	
+
 	if (new == NULL)
 	return (NULL);
 
