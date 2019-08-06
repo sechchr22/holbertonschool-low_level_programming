@@ -34,11 +34,11 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 			free(*head);
 			*head = buf;
 			return (1);
-			break;
+
 		default:
 			if (index > counter_1)
-			return (-1);	
-			
+			return (-1);
+
 			while (i < index)
 			{
 				prev = current;
@@ -47,7 +47,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 			}
 			prev->next = current->next;
 			free(current);
-			return(1);
-			break;
+			return (1);
 	}
 }
