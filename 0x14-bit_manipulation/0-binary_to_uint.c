@@ -9,7 +9,7 @@
 */
 int _pow_recursion(int x, int y)
 {
- 	if (y < 0)
+	if (y < 0)
 	{
 		return (-1);
 	}
@@ -40,24 +40,26 @@ unsigned int _strlen(const char *s)
 	return (len);
 }
 /**
-*
+ * binary_to_uint - converts a binary number to an unsigned int
+ * @b: pointer to a string of 1 and 0
+ * Return: decimal translate of the binary number
 */
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int len, i, count, check, pot;
 	int exp;
-	
+
 	if (b == NULL)
 	return (0);
 
-	check = 0;	
+	check = 0;
 	while (b[check] != '\0')
 	{
 		if (b[check] != '1' && b[check] != '0')
 		return (0);
 		check++;
-	} 
-	
+	}
+
 	i = 0;
 	count = 0;
 	len = _strlen(b);
@@ -66,7 +68,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		exp = len - (i + 1);
 		pot = _pow_recursion(2, exp);
-		
+
 		if (b[i] == '0')
 		count = count + 0;
 
@@ -77,4 +79,4 @@ unsigned int binary_to_uint(const char *b)
 	}
 
 return (count);
-}	
+}
