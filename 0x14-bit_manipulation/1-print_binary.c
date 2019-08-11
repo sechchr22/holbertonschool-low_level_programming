@@ -24,7 +24,7 @@ void print_binary(unsigned long int n)
 		n = n >> 1;
 		i++;
 	}
-	
+
 	while (i >= 0)
 	{
 		var = (n_c >> i);
