@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * print_binary - prints the binary representation of a number
  * @n: number
@@ -6,7 +7,8 @@
 */
 void print_binary(unsigned long int n)
 {
-	int i, j, var;
+	int i, j;
+	unsigned long int n_c;
 
 	if (n == 0)
 	{
@@ -14,18 +16,21 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	while (n >> i)
+	i = 0;
+
+	n_c = n;
+	while (n >> 1)
 	{
+		n = n >> 1;
 		i++;
 	}
 
 	j = i - 1;
-
 	while (j >= 0)
 	{
-		var = n >> j;
+		n_c = n_c >> 1;
 
-		if (var & 1)
+		if (n_c & 1)
 		_putchar('1');
 
 		else
