@@ -7,12 +7,12 @@
 */
 void print_binary(unsigned long int n)
 {
-	int i, j;
-	unsigned long int n_c;
+	int i;
+	unsigned long int n_c, var;
 
-	if (n == 0)
+	if ((n == 0) | (n == 1))
 	{
-		_putchar('0');
+		_putchar(n + '0');
 		return;
 	}
 
@@ -24,18 +24,17 @@ void print_binary(unsigned long int n)
 		n = n >> 1;
 		i++;
 	}
-
-	j = i - 1;
-	while (j >= 0)
+	
+	while (i >= 0)
 	{
-		n_c = n_c >> 1;
+		var = (n_c >> i);
 
-		if (n_c & 1)
+		if (var & 1)
 		_putchar('1');
 
 		else
 		_putchar('0');
 
-		j--;
+		i--;
 	}
 }
