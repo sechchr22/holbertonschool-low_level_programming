@@ -13,7 +13,8 @@ int main(int ac, char **av)
 {
 	if (ac != 3)
 	{
-		write(STDERR_FILENO, "Usage: cp file_from file_to", 28);
+		/*write(STDERR_FILENO, "Usage: cp file_from file_to", 28);*/
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to");
 		exit(97);
 	}
 
