@@ -51,7 +51,15 @@ void copy(const char *file_from, char *file_to)
 	error_99(file_to);
 
 	while (num == 1024)
-	num = write(fd2, buf, num);
+	{
+		num = read(fd, buf, 1024);
+		if (num == -1)
+		error_98(file_from);
+
+		num = write(fd2, buf, num);
+		if (num == -1)
+		error_99(file_to);
+	}
 
 	close_value = close(fd);
 	if (close_value == -1)
@@ -69,7 +77,7 @@ void copy(const char *file_from, char *file_to)
 void error_98(const char *a)
 {
 	exit(98);
-	dprintf(STDOUT_FILENO, "Error: Can't read from file %s", a);
+	dprintf(STDERR_FILENO, "Error: Can't read from file %s", a);
 }
 /**
  * error_99 - function for error99
@@ -79,7 +87,7 @@ void error_98(const char *a)
 void error_99(char *a)
 {
 	exit(99);
-	dprintf(STDOUT_FILENO, "Error: Can't write to  %s", a);
+	dprintf(STDERR_FILENO, "Error: Can't write to  %s", a);
 }
 /**
  * error_100 - function for error100
@@ -89,5 +97,5 @@ void error_99(char *a)
 void error_100(int a)
 {
 	exit(100);
-	dprintf(STDOUT_FILENO, "Error: Can't close fd %d", a);
+	dprintf(STDERR_FILENO, "Error: Can't close fd %d", a);
 }
