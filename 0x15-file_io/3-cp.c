@@ -86,7 +86,7 @@ void error_98(const char *a)
 */
 void error_99(char *a)
 {
-	dprintf(STDERR_FILENO, "Error: Can't write to  %s", a);
+	dprintf(STDERR_FILENO, "Error: Can't write to %s", a);
 	exit(98);
 }
 /**
