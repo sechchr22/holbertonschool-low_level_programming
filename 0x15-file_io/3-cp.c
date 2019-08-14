@@ -31,32 +31,32 @@ int main(int ac, char **av)
 */
 void copy(const char *file_from, char *file_to)
 {
-	int fd, num, fd2, close_value, close_value2;
+	int fd, num, num2, fd2, close_value, close_value2;
 	char buf[1024];
 
 	fd = open(file_from, O_RDONLY);
 	if (fd == -1)
 	error_98(file_from);
 
-	fd2 = open(file_to, O_RDWR | O_CREAT | O_TRUNC, 0664);
+	fd2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd2 == -1)
 	error_99(file_to);
 
-	num = read(fd, buf, 1024);
-	if (num == -1)
+	num2 = read(fd, buf, 1024);
+	if (num2 == -1)
 	error_98(file_from);
 
-	num = write(fd2, buf, num);
+	num = write(fd2, buf, num2);
 	if (num == -1)
 	error_99(file_to);
 
-	while (num == 1024)
+	while (num2 == 1024)
 	{
-		num = read(fd, buf, 1024);
-		if (num == -1)
+		num2 = read(fd, buf, 1024);
+		if (num2 == -1)
 		error_98(file_from);
 
-		num = write(fd2, buf, num);
+		num = write(fd2, buf, num2);
 		if (num == -1)
 		error_99(file_to);
 	}
@@ -76,8 +76,8 @@ void copy(const char *file_from, char *file_to)
 */
 void error_98(const char *a)
 {
-	exit(98);
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s", a);
+	exit(98);
 }
 /**
  * error_99 - function for error99
@@ -86,8 +86,8 @@ void error_98(const char *a)
 */
 void error_99(char *a)
 {
-	exit(99);
 	dprintf(STDERR_FILENO, "Error: Can't write to  %s", a);
+	exit(98);
 }
 /**
  * error_100 - function for error100
@@ -96,6 +96,6 @@ void error_99(char *a)
 */
 void error_100(int a)
 {
-	exit(100);
 	dprintf(STDERR_FILENO, "Error: Can't close fd %d", a);
+	exit(100);
 }
