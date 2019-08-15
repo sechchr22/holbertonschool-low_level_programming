@@ -31,7 +31,7 @@ int main(int ac, char **av)
 */
 void copy(const char *file_from, char *file_to)
 {
-	int fd, num, num2, fd2, close_value, close_value2;
+	int fd, fd2, num, num2, close_value, close_value2;
 	char buf[1024];
 
 	fd = open(file_from, O_RDONLY);
@@ -87,7 +87,7 @@ void error_98(const char *a)
 void error_99(char *a)
 {
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", a);
-	exit(98);
+	exit(99);
 }
 /**
  * error_100 - function for error100
