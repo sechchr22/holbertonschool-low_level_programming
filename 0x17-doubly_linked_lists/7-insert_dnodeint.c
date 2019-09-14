@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * dlistint_len - function to know len of the double linked list
  * @h: pointer to the head of the list
