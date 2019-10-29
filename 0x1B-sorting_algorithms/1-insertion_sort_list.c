@@ -67,8 +67,8 @@ void insertion_sort_list(listint_t **list)
 		runner = runner->next;
 		count += 1;
 	}
-	if (count == 1 || count == 0 || *list == NULL)
-	return;
+	if (count != 1 || count != 0 || *list != NULL)
+	{
 	while (marker != NULL)
 	{
 		head = *list;
@@ -77,8 +77,7 @@ void insertion_sort_list(listint_t **list)
 			head = head->next;
 			if (head->next == NULL)
 			break;
-		}
-		end_sorted_list = head;
+		} end_sorted_list = head;
 		if (end_sorted_list->next == NULL)
 		begin_unsorted_list = end_sorted_list;
 		else
@@ -96,5 +95,6 @@ void insertion_sort_list(listint_t **list)
 				break;
 			} print_list(*list);
 		} marker = marker->next;
+	}
 	}
 }
