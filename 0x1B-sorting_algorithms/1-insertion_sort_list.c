@@ -67,7 +67,7 @@ void insertion_sort_list(listint_t **list)
 		runner = runner->next;
 		count += 1;
 	}
-	if (count == 1)
+	if (count == 1 || count == 0 || *list == NULL)
 	return;
 	while (marker != NULL)
 	{
