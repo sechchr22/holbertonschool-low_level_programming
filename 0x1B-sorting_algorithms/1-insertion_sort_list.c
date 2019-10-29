@@ -68,7 +68,7 @@ void insertion_sort_list(listint_t **list)
 		count += 1;
 	}
 	if (count != 1 || count != 0 || *list != NULL)
-	{
+	return;
 	while (marker != NULL)
 	{
 		head = *list;
@@ -95,6 +95,5 @@ void insertion_sort_list(listint_t **list)
 				break;
 			} print_list(*list);
 		} marker = marker->next;
-	}
 	}
 }
