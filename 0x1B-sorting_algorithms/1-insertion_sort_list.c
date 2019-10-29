@@ -12,11 +12,10 @@ void swap_nodes(listint_t *a, listint_t *b)
 
 	temp = a; if (a->prev == NULL && b->next == NULL)
 	{
-		a = a->next;
 		a->next = NULL;
 		b->next = temp;
 		b->prev = NULL;
-		a->prev = temp;
+		a->prev = b->next;
 		return;
 	}
 	if (a->prev == NULL)
@@ -58,20 +57,32 @@ void swap_nodes(listint_t *a, listint_t *b)
 
 void insertion_sort_list(listint_t **list)
 {
+	int count = 0;
 	listint_t *head, *marker = *list;
-	listint_t *end_sorted_list;
+	listint_t *end_sorted_list, *runner = *list;
 	listint_t *begin_unsorted_list;
 
+	while (runner != NULL)
+	{
+		runner = runner->next;
+		count += 1;
+	}
+	if (count == 1)
+	return;
 	while (marker != NULL)
 	{
 		head = *list;
-
 		while (head->n < head->next->n)
-		head = head->next;
-
+		{
+			head = head->next;
+			if (head->next == NULL)
+			break;
+		}
 		end_sorted_list = head;
+		if (end_sorted_list->next == NULL)
+		begin_unsorted_list = end_sorted_list;
+		else
 		begin_unsorted_list = end_sorted_list->next;
-
 		while ((begin_unsorted_list->n < begin_unsorted_list->prev->n)
 										 && (begin_unsorted_list->prev != NULL))
 		{
@@ -83,11 +94,7 @@ void insertion_sort_list(listint_t **list)
 				*list = begin_unsorted_list;
 				print_list(*list);
 				break;
-			}
-
-			print_list(*list);
-		}
-
-		marker = marker->next;
+			} print_list(*list);
+		} marker = marker->next;
 	}
 }
