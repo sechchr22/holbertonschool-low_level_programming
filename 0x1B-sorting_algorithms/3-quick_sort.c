@@ -35,7 +35,7 @@ int lomutos_partition(int *arr, size_t lo, size_t hi, size_t size)
 
 	for (j = lo; j < hi; j++)
 	{
-		if (arr[j] < pivot)
+		if (arr[j] <= pivot)
 		{
 			if (i != j)
 			{
