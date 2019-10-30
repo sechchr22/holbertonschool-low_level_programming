@@ -1,99 +1,63 @@
 #include "sort.h"
 /**
- * swap_nodes - function to swap nodes
- * @a: pointer to a node
- * @b: pointer to a node
- * Return: nothing
-*/
-
-void swap_nodes(listint_t *a, listint_t *b)
-{
-	listint_t *temp;
-
-	temp = a; if (a->prev == NULL && b->next == NULL)
-	{
-		a->next = NULL;
-		b->next = temp;
-		b->prev = NULL;
-		a->prev = b->next;
-		return;
-	}
-	if (a->prev == NULL)
-	{
-		a->prev = a->next;
-		a->next = b->next;
-		b->next->prev = temp;
-		b->next = temp;
-		a = a->prev;
-		b->prev = NULL;
-		return;
-	}
-	if (b->next == NULL)
-	{
-		a->prev->next = a->next;
-		b->prev = a->prev;
-		b->next = temp;
-		a->prev = a->next;
-		a->next = NULL;
-		return;
-	}
-	else
-	{
-		a->prev->next = a->next;
-		b->prev = a->prev;
-		a->prev = a->next;
-		a->next = b->next;
-		b->next->prev = temp;
-		b->next = temp;
-		return;
-	}
-}
-
-/**
- * insertion_sort_list - to sort with insertion algorithm
- * @list: double pointer to a double linked list
- * Return: nothing
-*/
-
+ * insertion_sort_list - sort list by inserting nodes
+ *
+ * @list: list to be sorted
+ *
+ */
 void insertion_sort_list(listint_t **list)
 {
-	int count = 0;
-	listint_t *head, *marker = *list;
-	listint_t *end_sorted_list, *runner = *list;
-	listint_t *begin_unsorted_list;
+	listint_t *limit, *cmp, *uns;
 
-	while (runner != NULL)
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
+		return;
+	limit = *list;
+	if (limit->next)
+		uns = limit->next;
+	while (limit->next)
 	{
-		runner = runner->next;
-		count += 1;
-	}
-	if (count == 1 || count == 0 || *list == NULL)
-	return;
-	while (marker != NULL)
-	{
-		head = *list;
-		while (head->n < head->next->n)
+		if (uns->n >= limit->n)
+			limit = limit->next;
+		cmp = limit;
+		if (limit->next)
+			uns = limit->next;
+		while (cmp)
 		{
-			head = head->next;
-			if (head->next == NULL)
-			break;
-		} end_sorted_list = head;
-		if (end_sorted_list->next == NULL)
-		begin_unsorted_list = end_sorted_list;
-		else
-		begin_unsorted_list = end_sorted_list->next;
-		while ((begin_unsorted_list->n < begin_unsorted_list->prev->n)
-										 && (begin_unsorted_list->prev != NULL))
-		{
-			swap_nodes(begin_unsorted_list->prev, begin_unsorted_list);
-			end_sorted_list = begin_unsorted_list->prev;
-
-			if (begin_unsorted_list->prev == NULL)
+			if (uns->n < cmp->n)
 			{
-				*list = begin_unsorted_list;
+				switch_n(&cmp, &uns);
+				if ((*list)->prev)
+					*list = (*list)->prev;
 				print_list(*list);
-				break;
-			} print_list(*list);
-		} marker = marker->next;
+			}
+			cmp = cmp->prev;
+		}
 	}
+}
+/**
+ * switch_n - switch nodes
+ *
+ * @un: node to be added in organized section
+ * @cm: to to compare with
+ *
+ */
+void switch_n(listint_t **cm, listint_t **un)
+{
+	listint_t *c, *u;
+
+	c = *cm;
+	u = *un;
+
+	u->prev = u->prev->prev;
+	c->next = c->next->next;
+
+	if (c->prev)
+		c->prev->next = u;
+	if (u->next)
+		u->next->prev = c;
+
+	u->next = c;
+	c->prev = u;
+
+	c = c->prev;
 }
