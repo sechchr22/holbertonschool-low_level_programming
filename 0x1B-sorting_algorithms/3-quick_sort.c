@@ -1,19 +1,17 @@
 #include "sort.h"
 /**
- * swap - swap 2 elements from the array
- * @arr: pointer to array
- * @i: int
- * @j: int
- * Return: nothing
+*swap_int - swap the values of two integers using pointers
+*@a: pointer 1
+*@b: pointer 2
+*Return: always 0
 */
-
-void swap(int *arr, int i, int j)
+void swap_int(int *a, int *b)
 {
-	int temp;
+	int c;
 
-	temp = arr[i];
-	arr[i] = arr[j];
-	arr[j] = temp;
+	c = *a;
+	*a = *b;
+	*b = c;
 }
 
 /**
@@ -25,34 +23,27 @@ void swap(int *arr, int i, int j)
  * Return: nothing
 */
 
-int lomutos_partition(int *arr, size_t lo, size_t hi, size_t size)
+int lomutos_partition(int *arr, int lo, int hi, size_t size)
 {
-	int pivot;
-	size_t i, j;
+	int pivot = 0;
+	int i = 0, j = 0;
 
 	pivot = arr[hi];
-	i = lo;
+	i = lo - 1;
 
-	for (j = lo; j < hi; j++)
+	for (j = lo; j <= hi; j++)
 	{
 		if (arr[j] <= pivot)
 		{
+			i += 1;
 			if (i != j)
 			{
-				swap(arr, i, j);
+				swap_int(&arr[i], &arr[j]);
 				print_array(arr, size);
 			}
-			i += 1;
 		}
 	}
-	swap(arr, i, hi);
-	if (i != hi)
-	{
-		print_array(arr, size);
-		return (hi);
-	}
-	else
-	return (hi - 1);
+	return (i);
 }
 
 /**
@@ -64,15 +55,16 @@ int lomutos_partition(int *arr, size_t lo, size_t hi, size_t size)
  * Return: nothing
 */
 
-void recursion(int *arr, size_t low, size_t high, size_t size)
+void recursion(int *arr, int low, int high, size_t size)
 {
-	int pi;
+	int pi = 0;
 
 	if (low < high)
 	{
 		pi = lomutos_partition(arr, low, high, size);
 
-		recursion(arr, low, pi, size);
+		recursion(arr, low, pi - 1, size);
+		recursion(arr, pi + 1, high, size);
 	}
 }
 
@@ -85,7 +77,7 @@ void recursion(int *arr, size_t low, size_t high, size_t size)
 
 void quick_sort(int *array, size_t size)
 {
-	size_t low, high;
+	int low = 0, high = 0;
 
 	if (size <= 1 || array == NULL || size == 0)
 	return;
