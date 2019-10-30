@@ -17,9 +17,13 @@ typedef struct listint_s
 
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
+
 void insertion_sort_list(listint_t **list);
-void swap_nodes(listint_t *a, listint_t *b);
+void switch_n(listint_t **cm, listint_t **un);
+
 void bubble_sort(int *array, size_t size);
+void switch_a(int *p_a, int *p_b);
+
 void quick_sort(int *array, size_t size);
 void swap_int(int *a, int *b);
 int lomutos_partition(int *arr, int lo, int hi, size_t size);
