@@ -10,7 +10,13 @@
 
 void print_array(int *array, unsigned int l, size_t h)
 {
-	unsigned int i;
+	unsigned int i = 0;
+
+	if (l == h)
+	{
+		printf("Searching in array: %d\n", array[l]);
+		return;
+	}
 
 	printf("Searching in array: ");
 
@@ -34,7 +40,7 @@ void print_array(int *array, unsigned int l, size_t h)
 
 int recursive(int *array, unsigned int l, size_t h, int value)
 {
-	unsigned int m;
+	unsigned int m = 0;
 
 	if (h >= l)
 	{
@@ -53,6 +59,7 @@ int recursive(int *array, unsigned int l, size_t h, int value)
 		}
 
 		print_array(array, l, h);
+
 		return (recursive(array, (m + 1), h, value));
 	}
 
@@ -69,5 +76,8 @@ return (-1);
 
 int binary_search(int *array, size_t size, int value)
 {
+	if (array == NULL)
+		return (-1);
+
 	return (recursive(array, 0, (size - 1), value));
 }
